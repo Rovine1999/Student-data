@@ -1,0 +1,195 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                
+                    <table border="1" class="performance">
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student Admission <br> Number</th>
+                            <th>Student Photo</th>
+                            <th>Principals</th>
+                            <th>Class Teacher's <br> Remarks</th>
+                            <th>Student Overall Position</th>
+                            <th>Student Stream <br> Position</th>
+                            <th>Mean Mark</th>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_name}}</td>
+                            <td>{{student.student_admission_number}}</td>
+                            <td><img src="{{student.student_photo}}"  alt=""></td>
+                            <td>{{student.principals_remarks}}</td>
+                            <td>{{student.class_teachers_remarks}}</td>
+                            <td>
+                                <ol>
+                                    <li>Deviation:{{student.overall_position.deviation}}</li>
+                                    <li>Position out Of:{{student.overall_position.position_out_of}}</li>
+                                    <li>Position:{{student.overall_position.position}}</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Deviation:{{student.stream_position.deviation}}</li>
+                                    <li>Position out Of:{{student.stream_position.position_out_of}}</li>
+                                    <li>Position:{{student.stream_position.position}}</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <ol>
+                                    <li>Deviation:{{student.mean_marks.deviation}}</li>
+                                    <li>Avarage Score:{{student.mean_marks.avg_score}}</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <h1>Subject Results</h1>
+                    <table border="" class="performance">
+                        <tr>
+                        <th>Subject Name</th>
+                        <th>Rank Out Of</th>
+                        <th>Deviation</th>
+                        <th>Grade</th>
+                        <th>Comment</th>
+                        <th>Rank</th>
+                        <th>Score</th>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[0].subject_name}}</td>
+                            <td>{{student.subject_results[0].rank_out_of}}</td>
+                            <td>{{student.subject_results[0].deviation}}</td>
+                            <td>{{student.subject_results[0].grade}}</td>
+                            <td>{{student.subject_results[0].comment}}</td>
+                            <td>{{student.subject_results[0].rank}}</td>
+                            <td>{{student.subject_results[0].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[1].subject_name}}</td>
+                            <td>{{student.subject_results[1].rank_out_of}}</td>
+                            <td>{{student.subject_results[1].deviation}}</td>
+                            <td>{{student.subject_results[1].grade}}</td>
+                            <td>{{student.subject_results[1].comment}}</td>
+                            <td>{{student.subject_results[1].rank}}</td>
+                            <td>{{student.subject_results[1].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[2].subject_name}}</td>
+                            <td>{{student.subject_results[2].rank_out_of}}</td>
+                            <td>{{student.subject_results[2].deviation}}</td>
+                            <td>{{student.subject_results[2].grade}}</td>
+                            <td>{{student.subject_results[2].comment}}</td>
+                            <td>{{student.subject_results[2].rank}}</td>
+                            <td>{{student.subject_results[2].score}}</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>{{student.subject_results[3].subject_name}}</td>
+                            <td>{{student.subject_results[3].rank_out_of}}</td>
+                            <td>{{student.subject_results[3].deviation}}</td>
+                            <td>{{student.subject_results[3].grade}}</td>
+                            <td>{{student.subject_results[3].comment}}</td>
+                            <td>{{student.subject_results[3].rank}}</td>
+                            <td>{{student.subject_results[3].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[4].subject_name}}</td>
+                            <td>{{student.subject_results[4].rank_out_of}}</td>
+                            <td>{{student.subject_results[4].deviation}}</td>
+                            <td>{{student.subject_results[4].grade}}</td>
+                            <td>{{student.subject_results[4].comment}}</td>
+                            <td>{{student.subject_results[4].rank}}</td>
+                            <td>{{student.subject_results[4].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[5].subject_name}}</td>
+                            <td>{{student.subject_results[5].rank_out_of}}</td>
+                            <td>{{student.subject_results[5].deviation}}</td>
+                            <td>{{student.subject_results[5].grade}}</td>
+                            <td>{{student.subject_results[5].comment}}</td>
+                            <td>{{student.subject_results[5].rank}}</td>
+                            <td>{{student.subject_results[5].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[6].subject_name}}</td>
+                            <td>{{student.subject_results[6].rank_out_of}}</td>
+                            <td>{{student.subject_results[6].deviation}}</td>
+                            <td>{{student.subject_results[6].grade}}</td>
+                            <td>{{student.subject_results[6].comment}}</td>
+                            <td>{{student.subject_results[6].rank}}</td>
+                            <td>{{student.subject_results[6].score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.subject_results[7].subject_name}}</td>
+                            <td>{{student.subject_results[7].rank_out_of}}</td>
+                            <td>{{student.subject_results[7].deviation}}</td>
+                            <td>{{student.subject_results[7].grade}}</td>
+                            <td>{{student.subject_results[7].comment}}</td>
+                            <td>{{student.subject_results[7].rank}}</td>
+                            <td>{{student.subject_results[7].score}}</td>
+                        </tr>
+                        <tr>
+                        <td>{{student.subject_results[8].subject_name}}</td>
+                        <td>{{student.subject_results[8].rank_out_of}}</td>
+                        <td>{{student.subject_results[8].deviation}}</td>
+                        <td>{{student.subject_results[8].grade}}</td>
+                        <td>{{student.subject_results[8].comment}}</td>
+                        <td>{{student.subject_results[8].rank}}</td>
+                        <td>{{student.subject_results[8].score}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{student.subject_results[9].subject_name}}</td>
+                        <td>{{student.subject_results[9].rank_out_of}}</td>
+                        <td>{{student.subject_results[9].rank_out_of}}</td>
+                        <td>{{student.subject_results[9].grade}}</td>
+                        <td>{{student.subject_results[9].comment}}</td>
+                        <td>{{student.subject_results[9].rank}}</td>
+                        <td>{{student.subject_results[9].score}}</td>
+                    </tr>
+                    <tr>
+                        <td>{{student.subject_results[10].subject_name}}</td>
+                        <td>{{student.subject_results[10].rank_out_of}}</td>
+                        <td>{{student.subject_results[10].deviation}}</td>
+                        <td>{{student.subject_results[10].grade}}</td>
+                        <td>{{student.subject_results[10].comment}}</td>
+                        <td>{{student.subject_results[10].rank}}</td>
+                        <td>{{student.subject_results[10].score}}</td>
+                    </tr>
+                    </table>
+                    <h1>Student Performance Over Time</h1>
+                    <table border="" class="performance">
+                        <tr>
+                            <th>Exam Name</th>
+                            <th>Average Score</th>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[0].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[0].avg_score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[1].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[1].avg_score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[2].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[2].avg_score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[3].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[3].avg_score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[4].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[4].avg_score}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{student.student_performance_over_time[0].exam_name}}</td>
+                            <td>{{student.student_performance_over_time[0].avg_score}}</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
